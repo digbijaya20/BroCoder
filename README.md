@@ -2,9 +2,9 @@
 
 The web application is a social network where developers can share their details like expirience company they work for and even showcase their work by connecting their github repo to the website. People visiting the website can post comments and like the other people post. There is a single user associated to every profile on the basis of their email. This webapp similar to facebook but relates to developers.
 
-#Database: mongodb, moongose object document mapper.
+# Database: mongodb, moongose object document mapper.
 
-#Total three schemas
+# Total three schemas
 a) User:  Contain name, email, password and avatar i.e the picture from the email address  is automatically added as their profile picture. If no pic is available a default avatar is added if there are some nudes in the profile picture of the email address it is automatically excluded.
 
 b)Profile: This refers to a particular user that is already registered.Apart from that other fields are company, skills, website, location, status, bio, githubusername. Experience: it is an array of objects with different fields related to expirience, data for this field is not mandatory so backend validation is not performed. Education:  it is an array of objects with different fields related to education, data for this field is not mandatory so backend validation is not performed. Social:  Contain field like facebook, linkedin etc.
@@ -12,7 +12,7 @@ b)Profile: This refers to a particular user that is already registered.Apart fro
 c) Posts: This refers to a particular user it has fields like comments, like. A user makes a post his avatar, name, and text post are visible.
 
 
-#Backend: Express, jwt authentication, bycrypt, express-validator , gravatar, config.
+# Backend: Express, jwt authentication, bycrypt, express-validator , gravatar, config.
 
 Protected routes: In backend some routes are private and others public which is done by using json web token where the user id is sent as a payload through headers. This is done in auth middleware. To make a route private the auth middleware is called in router.get , post or delete.
 
@@ -39,7 +39,7 @@ Routes Post: a) There are two get routes and both public to get the post of all 
 Config: Js library to handle global variable like json web token secret key, mongo cloud key with database name and password etc.This library helps to access the values on the basis of the keys stored in a js object.
 
 
-#Frontend: React, react-redux, redux-thunk, react-hooks.
+# Frontend: React, react-redux, redux-thunk, react-hooks.
 
 There is posts page, sign up, dashboard, profile page
 
