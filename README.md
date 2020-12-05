@@ -1,4 +1,4 @@
-# BroCoder
+# BroCoder(Social Network for Developer)
 
 The web application is a social network where developers can share their details like expirience company they work for and even showcase their work by connecting their github repo to the website. People visiting the website can post comments and like the other people post. There is a single user associated to every profile on the basis of their email. This webapp similar to facebook but relates to developers.
 
